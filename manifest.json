@@ -1,0 +1,48 @@
+{
+  "id": "/",
+  "scope": "/",
+  "name": "eu, super-herói",
+  "display": "standalone",
+  "start_url": "/",
+  "short_name": "eu, super-herói",
+  "theme_color": "#E1477E",
+  "description": "página do livro *Eu, Super-herói*, onde criamos uma rede de apoio para os que desejam encontrar mais\n    conteúdo e descobrir como ajudar ou pedir ajuda.",
+  "orientation": "any",
+  "background_color": "#E1477E",
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "display_override": ["window-controls-overlay"],
+  "launch_handler": {
+    "client_mode": "focus-existing"
+  },
+  "splash_pages": null,
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "features": [
+    "Cross Platform",
+    "fast",
+    "simple"
+  ],
+  "categories": [
+    "social"
+  ],
+  "shortcuts": [
+    {
+      "name": "eu, super-herói",
+      "short_name": "eu, super-herói",
+      "description": "página do livro *Eu, Super-herói*, onde criamos uma rede de apoio para os que desejam encontrar mais\n    conteúdo e descobrir como ajudar ou pedir ajuda.",
+      "url": "/",
+      "icons": [{ "src": "/android-chrome-192x192.png", "sizes": "192x192" }]
+    }
+  ]
+}
