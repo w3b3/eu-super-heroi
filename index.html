@@ -2,57 +2,328 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta content="Descrição do site" name="description">
-    <meta content="palavras, chaves, separadas, por, virgula" name="keywords">
+    <meta content="página do livro *Eu, Super-herói*, onde criamos uma rede de apoio para os que desejam encontrar mais
+    conteúdo e descobrir como ajudar ou pedir ajuda." name="description">
+    <meta content="livro, eu super-heroi, crianças, abuso, auto-ajuda, educação" name="keywords">
     <meta content="Caroline Bernardes" name="author">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link href="styles.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="/manifest.json" rel="manifest">
     <title>Eu, Super-herói</title>
     <script src="scripts.js"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QW251HRLSH"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'G-QW251HRLSH');
     </script>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" rel="stylesheet">
+    <script crossorigin="anonymous"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-<header>
-    <!--    <h1 class="titulo">Eu, Super-herói</h1>-->
-    <nav>
-        <a class="selecionado" href="index.html">Início</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="contato.html">Contato</a>
-
-    </nav>
-</header>
+<!--<header class="site-header sticky-top py-1 bg-dark">-->
+<!--    <nav class="container d-flex flex-column flex-md-row justify-content-between">-->
+<!--        <a class="selecionado py-2 d-none d-md-inline-block yellow-300" href="index.html">Início</a>-->
+<!--        <a class="py-2 d-none d-md-inline-block" href="sobre.html">Sobre</a>-->
+<!--        <a class="py-2 d-none d-md-inline-block" href="contato.html">Contato</a>-->
+<!--    </nav>-->
+<!--</header>-->
 <main>
-    <section>
-        <article>
-            <h2>Bem-vindo ao nosso site "Eu, Super-herói"!</h2>
-            <p>Aqui, divulgamos o livro "Eu, Super-herói" e criamos uma rede de apoio para os que desejam encontrar mais
-                conteúdo e descobrir como ajudar ou pedir ajuda.
-            </p>
-        </article>
-        <article class="spacer"></article>
-        <article>
-            <p>
-                Juntos, vamos explorar o mundo dos superpoderes e
-                valorizar o heroísmo real.
-            </p>
-            <p>
-                Seja bem-vindo à nossa comunidade de heróis!
-            </p>
-        </article>
+    <!--    PARTE 1 IMAGEM QUE IMPACTA E FRASE DE EFEITO -->
+    <section class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+            <h1 class="display-4 fw-normal">Eu, Super-herói</h1>
+            <p class="lead fw-normal">👋Bem-vindo ao nosso site!<br> Juntos, vamos explorar o mundo dos
+                superpoderes e
+                valorizar o heroísmo real.</p>
+            <a class="btn btn-outline-secondary" href="en.html">🇨🇦 / 🇺🇸Coming soon</a>
+            <a class="btn btn-outline-secondary" href="fr.html">🇨🇦 / 🇫🇷À venir</a>
+        </div>
+        <div class="product-device shadow-sm d-none d-md-block"></div>
+        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
     </section>
+    <!-- PARTE 2 DESCREVA 3 OU 4 EXEMPLOS DE SITUACOES OU TOPICOS ABORDADOS-->
+    <!--    make all cards center aligned in the container-->
+    <section class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+            <div class="my-3 py-3">
+                <h2 class="display-5">O livro</h2>
+                <p class="lead">Aqui, divulgamos o livro "Eu, Super-herói" e criamos uma rede de apoio para os que
+                    desejam encontrar mais conteúdo e descobrir como ajudar ou pedir ajuda.</p>
+            </div>
+            <div class="bg-light shadow-sm mx-auto overflow-hidden"
+                 style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                <img alt="Eu, Super-herói" src="images/capa_menor.webp"
+                     style="width: 100%; height: 100%; object-fit: cover">
+            </div>
+        </div>
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 p-3">
+                <h2 class="display-5">A comunidade</h2>
+                <p class="lead">Seja bem-vindo à nossa comunidade de heróis! Nossa missão é capacitar crianças para uma
+                    vida saudável e
+                    equilibrada através do conhecimento emocional e do respeito ao corpo e à mente.
+                </p>
+            </div>
+            <div class="bg-light shadow-sm mx-auto overflow-hidden"
+                 style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                <img alt="Eu, Super-herói" src="images/capa_menor.webp"
+                     style="width: 100%; height: 100%; object-fit: cover">
+            </div>
+        </div>
+        <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+            <div class="my-3 py-3">
+                <h2 class="display-5">Quero ajuda</h2>
+                <p class="lead">Ou quero ajudar. Nossa visão é fortalecer uma geração de crianças emocionalmente
+                    inteligentes, confiantes e compassivas, que possam prosperar em suas vidas pessoais e interações
+                    sociais.</p>
+            </div>
+            <div class="bg-light shadow-sm mx-auto overflow-hidden"
+                 style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                <img alt="Eu, Super-herói" src="images/capa_menor.webp"
+                     style="width: 100%; height: 100%; object-fit: cover">
+            </div>
+        </div>
+    </section>
+    <!--   PARTE 3 FALE UM POUCO MAIS E JA MOSTRE UM BOTAO PARA SABER MAIS (OU ENTRAR EM CONTATO)-->
+    <section class="p-5 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold">Quer conhecer ou se envolver?</h1>
+            <p class="col-md-8 fs-4">Eu me chamo
+                <author>Caroline</author>
+                e estou super interessada em conversar com você também. Escrevi essa obra com todo o carinho e tenho um
+                super material de apoio e acompanhamento virtual (ao vivo, inclusive com sessões comigo diretamente).
+            </p>
+<!--            <button class="btn btn-primary btn-lg" type="button">💬 Entre em contato agora</button>-->
+            <a href="mailto:info@eusuperheroi.com.br" class="btn btn-primary btn-lg">💬 Entre em contato agora</a>
+        </div>
+    </section>
+    <!--    PARTE 4 OPCOES E PAGUE AGORA -->
+    <!-- <section class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+         <div class="col">
+             <div class="card mb-4 rounded-3 shadow-sm">
+                 <div class="card-header py-3">
+                     <h4 class="my-0 fw-normal">Free</h4>
+                 </div>
+                 <div class="card-body">
+                     <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small></h1>
+                     <ul class="list-unstyled mt-3 mb-4">
+                         <li>10 users included</li>
+                         <li>2 GB of storage</li>
+                         <li>Email support</li>
+                         <li>Help center access</li>
+                     </ul>
+                     <button class="w-100 btn btn-lg btn-outline-primary" type="button">Sign up for free</button>
+                 </div>
+             </div>
+         </div>
+         <div class="col">
+             <div class="card mb-4 rounded-3 shadow-sm">
+                 <div class="card-header py-3">
+                     <h4 class="my-0 fw-normal">Pro</h4>
+                 </div>
+                 <div class="card-body">
+                     <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small></h1>
+                     <ul class="list-unstyled mt-3 mb-4">
+                         <li>20 users included</li>
+                         <li>10 GB of storage</li>
+                         <li>Priority email support</li>
+                         <li>Help center access</li>
+                     </ul>
+                     <button class="w-100 btn btn-lg btn-primary" type="button">Get started</button>
+                 </div>
+             </div>
+         </div>
+         <div class="col">
+             <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                 <div class="card-header py-3 text-white bg-primary border-primary">
+                     <h4 class="my-0 fw-normal">Enterprise</h4>
+                 </div>
+                 <div class="card-body">
+                     <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small></h1>
+                     <ul class="list-unstyled mt-3 mb-4">
+                         <li>30 users included</li>
+                         <li>15 GB of storage</li>
+                         <li>Phone and email support</li>
+                         <li>Help center access</li>
+                     </ul>
+                     <button class="w-100 btn btn-lg btn-primary" type="button">Contact us</button>
+                 </div>
+             </div>
+         </div>
+     </section>
+     &lt;!&ndash;    PARTE 5 COMPARACAO DAS OPCOES &ndash;&gt;
+     <h2 class="display-6 text-center mb-4">Compare plans</h2>
+     <section class="table-responsive">
+         <table class="table text-center">
+             <thead>
+             <tr>
+                 <th style="width: 34%;"></th>
+                 <th style="width: 22%;">Free</th>
+                 <th style="width: 22%;">Pro</th>
+                 <th style="width: 22%;">Enterprise</th>
+             </tr>
+             </thead>
+             <tbody>
+             <tr>
+                 <th class="text-start" scope="row">Public</th>
+                 <td>
+                     <svg class="bi" height="24" width="24">
+                         <use xlink:href="#check"></use>
+                     </svg>
+                 </td>
+                 <td>
+                     <svg class="bi" height="24" width="24">
+                         <use xlink:href="#check"></use>
+                     </svg>
+                 </td>
+                 <td>
+                     <svg class="bi" height="24" width="24">
+                         <use xlink:href="#check"></use>
+                     </svg>
+                 </td>
+             </tr>
+             <tr>
+                 <th class="text-start" scope="row">Private</th>
+                 <td></td>
+                 <td>
+                     <svg class="bi" height="24" width="24">
+                         <use xlink:href="#check"></use>
+                     </svg>
+                 </td>
+                 <td>
+                     <svg class="bi" height="24" width="24">
+                         <use xlink:href="#check"></use>
+                     </svg>
+                 </td>
+             </tr>
+             </tbody>
+
+             <tbody>
+             <tr>
+                 <th class="text-start" scope="row">Permissions</th>
+                 <td>
+                     <svg class="bi" height="24" width="24">
+                         <use xlink:href="#check"></use>
+                     </svg>
+                 </td>
+                 <td>
+                     <svg class="bi" height="24" width="24">
+                         <use xlink:href="#check"></use>
+                     </svg>
+                 </td>
+                 <td>
+                     <svg class="bi" height="24" width="24">
+                         <use xlink:href="#check"></use>
+                     </svg>
+                 </td>
+             </tr>
+             <tr>
+                 <th class="text-start" scope="row">Sharing</th>
+                 <td></td>
+                 <td>
+                     <svg class="bi" height="24" width="24">
+                         <use xlink:href="#check"></use>
+                     </svg>
+                 </td>
+                 <td>
+                     <svg class="bi" height="24" width="24">
+                         <use xlink:href="#check"></use>
+                     </svg>
+                 </td>
+             </tr>
+             <tr>
+                 <th class="text-start" scope="row">Unlimited members</th>
+                 <td></td>
+                 <td>
+                     <svg class="bi" height="24" width="24">
+                         <use xlink:href="#check"></use>
+                     </svg>
+                 </td>
+                 <td>
+                     <svg class="bi" height="24" width="24">
+                         <use xlink:href="#check"></use>
+                     </svg>
+                 </td>
+             </tr>
+             <tr>
+                 <th class="text-start" scope="row">Extra security</th>
+                 <td></td>
+                 <td></td>
+                 <td>
+                     <svg class="bi" height="24" width="24">
+                         <use xlink:href="#check"></use>
+                     </svg>
+                 </td>
+             </tr>
+             </tbody>
+         </table>
+     </section>-->
 </main>
+<!--<footer class="container py-5">
+    <div class="row">
+        <div class="col-12 col-md">
+            <svg class="d-block mb-2" fill="none" height="24" role="img" stroke="currentColor"
+                 stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
+                 xmlns="http://www.w3.org/2000/svg"><title>Product</title>
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path>
+            </svg>
+            <small class="d-block mb-3 text-muted">© 2017–2021</small>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Features</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="link-secondary" href="#">Cool stuff</a></li>
+                <li><a class="link-secondary" href="#">Random feature</a></li>
+                <li><a class="link-secondary" href="#">Team feature</a></li>
+                <li><a class="link-secondary" href="#">Stuff for developers</a></li>
+                <li><a class="link-secondary" href="#">Another one</a></li>
+                <li><a class="link-secondary" href="#">Last time</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="link-secondary" href="#">Resource name</a></li>
+                <li><a class="link-secondary" href="#">Resource</a></li>
+                <li><a class="link-secondary" href="#">Another resource</a></li>
+                <li><a class="link-secondary" href="#">Final resource</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="link-secondary" href="#">Business</a></li>
+                <li><a class="link-secondary" href="#">Education</a></li>
+                <li><a class="link-secondary" href="#">Government</a></li>
+                <li><a class="link-secondary" href="#">Gaming</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="link-secondary" href="#">Team</a></li>
+                <li><a class="link-secondary" href="#">Locations</a></li>
+                <li><a class="link-secondary" href="#">Privacy</a></li>
+                <li><a class="link-secondary" href="#">Terms</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>-->
 </body>
 </html>
